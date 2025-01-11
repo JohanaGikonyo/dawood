@@ -4,7 +4,7 @@ import Section2Items from "./Section2Items";
 import { useRouter } from "next/navigation";
 
 function Main() {
-  const [category, setCategory] = useState("ready"); // Default category
+  const [category, setCategory] = useState(""); // Default category
   const router = useRouter();
 
   // Get the current category from the URL

@@ -12,7 +12,7 @@ import SouthIcon from "@mui/icons-material/South";
 
 function Page() {
   const router = useRouter();
-  const [category, setCategory] = useState("ready");
+  const [category, setCategory] = useState("");
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
