@@ -28,7 +28,7 @@ function Section2Items() {
   {itemsCategory.map((item) => (
     <div
       key={item.id}
-      className="flex  justify-between items-center lg:p-3 bg-gradient-to-b from-teal-100 to-teal-50 rounded-md   md:col-span-3 md:flex-row"
+      className="flex  justify-between items-center lg:p-3 bg-gradient-to-l from-teal-100 to-teal-50 rounded-md   md:col-span-3 md:flex-row"
     >
       {/* Left Section: Title and Button */}
       <div className="flex-1 flex flex-col items-start ml-2">
