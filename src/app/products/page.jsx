@@ -42,7 +42,7 @@ function Page() {
       case "beds":
         return <Beds />;
       default:
-        return <Ready />; // Default to Ready section
+        return <Ready />; 
     }
   };
 
