@@ -21,24 +21,24 @@ function ChooseUs() {
       </div>
 
       {/* Features Section */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-teal-700 font-medium text-lg">
-        <div className="flex flex-row items-center">
+      <div className="grid  md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-6 text-teal-700 font-medium text-lg">
+        <div className="flex flex-row gap-2 items-center">
           <span className="text-4xl mb-2">🚀</span>
           <span>Fast Installations</span>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-row items-center gap-2">
           <span className="text-4xl mb-2">✅</span>
           <span>Quality Guaranteed</span>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-row items-center gap-2">
           <span className="text-4xl mb-2">🛍️</span>
           <span>Easy to Shop</span>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-row items-center gap-2">
           <span className="text-4xl mb-2">📞</span>
           <span>24/7 Support</span>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-row  items-center gap-2">
           <span className="text-4xl mb-2">🔒</span>
           <span>Safe and Reliable</span>
         </div>

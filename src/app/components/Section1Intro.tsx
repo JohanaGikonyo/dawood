@@ -40,12 +40,15 @@ function Section1Intro() {
       <div className="relative">
         <Image
           src={img1}
-          alt="Dawood Furnitures (Introduction to Dawood Furniture)"
-          width={600}
-          height={400}
-          layout="responsive" // Use layout="responsive" for Next.js Image
-          objectFit="cover"
-          className="rounded-lg shadow-md"
+          alt="Intro Dawood Furniture"
+          width={500} // Desired width
+          height={300} // Desired height
+          style={{
+            objectFit: "cover", // Replace layout="responsive" with objectFit in the style prop
+            borderRadius: "0.5rem", // Optional: rounded corners
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // Optional: shadow
+          }}
+          className="rounded-lg shadow-lg" // Add Tailwind classes for additional styling
         />
       </div>
     </section>
