@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useRouter, useLocation } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Section1Intro from "./Section1Intro";
 import Section2Items from "./Section2Items";
 import ChooseUs from "./ChooseUs";
@@ -7,11 +7,10 @@ import ChooseUs from "./ChooseUs";
 function Main() {
   const [category, setCategory] = useState(""); // Default category
   const router = useRouter();
-  const location = useLocation();
 
   // Get the current category from the URL (safe for SSR)
   useEffect(() => {
-    const searchParams = new URLSearchParams(location.search);
+    const searchParams = new URLSearchParams(window.location.search);
     const categoryParam = searchParams.get("category");
     if (categoryParam) {
       setCategory(categoryParam);
