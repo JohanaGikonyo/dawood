@@ -33,11 +33,16 @@ function Main() {
         <div className="flex justify-around lg:justify-center py-4 gap-5">
           {[
             { label: "Ready", value: "ready" },
+            { label: "Antics", value: "antics" },
+
             { label: "New", value: "new" },
             { label: "Repair", value: "repair" },
             { label: "Recliners", value: "recliners" },
             { label: "Office", value: "office" },
+            { label: "Pillows", value: "pillows" },
+
             { label: "Beds", value: "beds" },
+
           ].map((item) => (
             <button
               key={item.value}

@@ -7,6 +7,10 @@ import NewFurniture from "../components/NewFurniture";
 import Beds from "../components/Beds";
 import Office from "../components/Office";
 import Repair from "../components/Repair";
+import Pillows from "../components/Pillows";
+
+import Antics from "../components/Antics";
+
 import { useRouter } from "next/navigation";
 import SouthIcon from "@mui/icons-material/South";
 
@@ -41,6 +45,10 @@ function Page() {
         return <Office />;
       case "beds":
         return <Beds />;
+      case "pillows":
+        return <Pillows />;
+      case "antics":
+        return <Antics />;
       default:
         return <Ready />; 
     }
@@ -52,11 +60,16 @@ function Page() {
       <nav className="flex justify-center gap-4 py-4 sticky top-0 bg-gradient-to-r from-teal-100 to-teal-50 overflow-x-auto no-scrollbar z-10 px-10 pl-40">
         {[
           { label: "Ready", value: "ready" },
+          { label: "Antics", value: "antics" },
+
           { label: "New", value: "new" },
           { label: "Repair", value: "repair" },
           { label: "Recliners", value: "recliners" },
           { label: "Office", value: "office" },
+          { label: "Pillows", value: "pillows" },
+
           { label: "Beds", value: "beds" },
+
         ].map((item) => (
           <button
             key={item.value}
@@ -80,7 +93,7 @@ function Page() {
           </h2>
           <p className="text-lg text-gray-600 max-w-xl mx-auto">
             From New furniture, repairs ex UK, recliner imported, dining tables
-            and chairs, office table & chairs to beds.
+            and chairs, office table & chairs, church & restaurant benches, to beds.
           </p>
           <div className="mt-8">
             <SouthIcon className="text-blue-500" />

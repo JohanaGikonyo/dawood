@@ -18,7 +18,7 @@ function Section2Items() {
       <div className="text-center py-10">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Choose Your Item</h2>
         <p className="text-lg text-gray-600 max-w-xl mx-auto">
-          From New furniture,antics sofa's, repairs ex UK sofa's & imported recliner,local sofa's office table  and chairs,to beds & pillows
+          From New furniture,antics sofa's, repairs ex UK sofa's & imported recliner,local sofa's office table  and chairs,church & restaurant  benches , to beds & pillows
         </p>
         <div className="mt-8">
           <SouthIcon className="text-blue-500" />

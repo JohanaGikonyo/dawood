@@ -1,9 +1,9 @@
-import React,{useState} from 'react'
-import { beds } from '../helpers/helpers';
+import React, {useState} from 'react'
+import { repair } from '../helpers/helpers';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import Image from 'next/image';
 import Modal from './Modal';
-function Beds() {
+function Benches() {
   const [selectedItem, setSelectedItem] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
   
@@ -18,10 +18,10 @@ function Beds() {
     };
   return (
     <div className='px-2'>  
-        <div className='flex items-start justify-center py-5'><h1 className='font-semibold text-2xl text-teal-600'>Beds</h1></div>   
+        <div className='flex items-start justify-center py-5'><h1 className='font-semibold text-2xl text-teal-600'>We Renew Furnitures</h1></div>   
            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-    {beds.map((item) => (
-      <div onClick={() => openModal(item)} key={item.id} className="hover:cursor-pointer pb-3 relative flex flex-col items-center justify-evenly bg-gradient-to-t from-slate-100 to-slate-50">
+    {repair.map((item) => (
+      <div onClick={() => openModal(item)} key={item.id} className="pb-3 hover:cursor-pointer relative flex flex-col items-center justify-evenly bg-gradient-to-t from-slate-100 to-slate-50 ">
         <Image 
           src={item.img} 
           alt={item.name} 
@@ -45,4 +45,4 @@ function Beds() {
   )
 }
 
-export default Beds
+export default Benches
