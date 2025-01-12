@@ -23,7 +23,7 @@ function Ready() {
       <div className="mb-10">
       <div className="overflow-x-auto no-scrollbar flex   gap-4 "> 
             {readyMade1.map((item, index) => (
-                <div className=' ' key={index}
+                <div onClick={() => openModal(item)} className='hover:cursor-pointer ' key={index}
                 >
               <div  className=" flex flex-col items-center  justify-evenly bg-gradient-to-t from-slate-100 to-slate-50 w-60 pb-3">
                 <Image 
@@ -51,7 +51,7 @@ function Ready() {
       <div>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {readyMade2.map((item) => (
-            <div key={item.id} className="pb-3 relative flex flex-col items-center justify-evenly bg-gradient-to-t from-slate-100 to-slate-50">
+            <div onClick={() => openModal(item)} key={item.id} className="pb-3 hover:cursor-pointer relative flex flex-col items-center justify-evenly bg-gradient-to-t from-slate-100 to-slate-50">
               <Image 
                 src={item.img} 
                 alt={item.name} 

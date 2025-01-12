@@ -22,7 +22,7 @@ function NewFurniture() {
         <div className='flex items-start justify-center py-5'><h1 className='font-semibold text-2xl text-teal-600'>Order Your Design</h1></div>   
            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
     {newItems.map((item) => (
-      <div key={item.id} className=" relative flex flex-col items-center justify-evenly bg-gradient-to-t from-slate-100 to-slate-50 pb-3">
+      <div onClick={() => openModal(item)} key={item.id} className=" relative hover:cursor-pointer flex flex-col items-center justify-evenly bg-gradient-to-t from-slate-100 to-slate-50 pb-3">
         <Image 
           src={item.img} 
           alt={item.name} 
