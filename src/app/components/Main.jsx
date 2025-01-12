@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter, useLocation } from "next/navigation";
 import Section1Intro from "./Section1Intro";
 import Section2Items from "./Section2Items";
 import ChooseUs from "./ChooseUs";
@@ -7,15 +7,16 @@ import ChooseUs from "./ChooseUs";
 function Main() {
   const [category, setCategory] = useState(""); // Default category
   const router = useRouter();
-  const searchParams = useSearchParams();
+  const location = useLocation();
 
   // Get the current category from the URL (safe for SSR)
   useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
     const categoryParam = searchParams.get("category");
     if (categoryParam) {
       setCategory(categoryParam);
     }
-  }, [searchParams]); // Re-run when the searchParams change
+  }, [location]); // Re-run when the location (search params) change
 
   // Function to handle navigation
   const handleNavigation = (category) => {
@@ -46,7 +47,7 @@ function Main() {
                 category === item.value
                   ? "bg-teal-500 text-white shadow-lg"
                   : "border-2 border-teal-200 text-teal-600 hover:bg-teal-400 hover:text-white"
-              } focus:outline-none focus:ring-2 focus:ring-teal-300`}
+              }`}
             >
               {item.label}
             </button>
