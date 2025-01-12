@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dawood Furnitures",
-  description: "Developed by JG Technologies",
+  title: "Damil Furnitures Design",
+  description: "Beatiful Home Furnitures",
 };
 
 export default function RootLayout({
