@@ -6,7 +6,7 @@ import logo from "../../../public/logodawoodweb.png";
 import Image from "next/image";
 function Footer() {
   return (
-    <div className="py-10 mt-5 bg-gradient-to-l from-teal-50 to-teal-100 grid md:grid-cols-2 grid-cols-1 lg:grid-cols-2  justify-between items-center px-3 gap-4 ">
+    <div className="py-10  bg-gradient-to-l from-teal-50 to-teal-100 grid md:grid-cols-2 grid-cols-1 lg:grid-cols-2  justify-between items-center px-3 gap-4 ">
  <div className="flex items-center gap-3">
           <Image
             src={logo}

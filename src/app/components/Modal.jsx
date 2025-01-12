@@ -33,7 +33,7 @@ function Modal({ isOpen, onClose, item }) {
 
         {/* WhatsApp Button */}
         <a
-  href={`https://wa.me/254710434297?text=Hi, I'm interested in ${item.name}. How much does it cost, and how can I get it? Here's the Item image: ${item.img}`}
+  href={`https://wa.me/254710434297?text=Hi, I'm interested in ${item.name}. How much does it cost, and how can I get it? `}
   target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600"

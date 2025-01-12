@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Section1Intro from "./Section1Intro";
 import Section2Items from "./Section2Items";
 import { useRouter } from "next/navigation";
-
+import ChooseUs from './ChooseUs'
 function Main() {
   const [category, setCategory] = useState(""); // Default category
   const router = useRouter();
@@ -50,6 +50,7 @@ function Main() {
         </div>
       </nav>
       <Section2Items category={category} />
+      <ChooseUs/>
     </div>
   );
 }
