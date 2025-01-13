@@ -29,8 +29,8 @@ function Main() {
       <Section1Intro />
 
       {/* Navigation Bar */}
-      <nav className="sticky top-0 bg-gradient-to-r from-teal-100 to-teal-50 overflow-x-auto no-scrollbar z-10 px-5 pr-14">
-        <div className="flex justify-around lg:justify-center py-4 gap-5">
+      <nav className="sticky top-0 bg-gradient-to-r from-teal-100 to-teal-50  z-10 ">
+        <div className="flex justify-around lg:justify-center overflow-x-auto no-scrollbar py-4 gap-5 px-5">
           {[
             { label: "Ready", value: "ready" },
             { label: "Antics", value: "antics" },

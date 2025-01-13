@@ -57,7 +57,9 @@ function Page() {
   return (
     <div className="bg-gradient-to-r from-teal-100 to-teal-50 min-h-screen flex flex-col">
       {/* Top Navigation */}
-      <nav className="flex justify-center gap-4 py-4 sticky top-0 bg-gradient-to-r from-teal-100 to-teal-50 overflow-x-auto no-scrollbar z-10 px-10 pl-64">
+      <div >
+      <nav className="flex justify-center gap-4 py-4 sticky top-0 bg-gradient-to-r from-teal-100 to-teal-50 overflow-x-auto no-scrollbar z-10 ">
+      <div className="flex justify-around lg:justify-center py-4 gap-5 px-5 overflow-x-auto no-scrollbar ">
         {[
           { label: "Ready", value: "ready" },
           { label: "Antics", value: "antics" },
@@ -83,8 +85,10 @@ function Page() {
             {item.label}
           </button>
         ))}
-      </nav>
+        </div>
 
+      </nav>
+      </div>
       {/* Main Content */}
       <div className="flex-1">
         <div className="text-center py-10">
