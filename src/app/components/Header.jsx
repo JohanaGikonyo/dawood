@@ -1,10 +1,16 @@
+'use client'
 import React from "react";
 import CallIcon from "@mui/icons-material/Call";
+import KeyIcon from '@mui/icons-material/Key';
 import Search from "./Search";
 import logo from "../../../public/logodawoodweb.png";
 import Image from "next/image";
-
+import { useRouter } from "next/navigation";
 function Header() {
+  const router=useRouter()
+  const handleAdminClick=()=>{
+    router.push('../admin')
+  }
   return (
     <header className="p-4 bg-gradient-to-b from-teal-100 to-teal-50 shadow-md ">
       <div className="flex justify-between items-center flex-wrap gap-4">
@@ -42,11 +48,19 @@ function Header() {
               Call Us
             </a>
           </button>
+          <button className=" text-teal-900 underline font-medium rounded-full px-4 py-2 hover:bg-teal-600 hover:text-white hover:m-3 transition-all" onClick={handleAdminClick}>
+              Admin
+            
+          </button>
         </div>
 
         {/* Responsive Search Bar */}
-        <div className="block lg:hidden w-full">
+        <div className=" lg:hidden flex">
           <Search />
+          <button className=" text-teal-900 underline font-medium rounded-full px-4 py-2 hover:bg-teal-600 hover:text-white hover:m-3 transition-all" onClick={handleAdminClick}>
+              <KeyIcon/>
+            
+          </button>
         </div>
       </div>
     </header>
