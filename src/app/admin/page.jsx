@@ -51,13 +51,12 @@ const fileInputRef=useRef(null)
     e.preventDefault();
     const payload = { ...itemData, category: selectedCategory };
 
-     const {data, error}=await AddItem(payload)
+     const { error}=await AddItem(payload)
 
      if(error){
       console.error("An error occured: ",error)
      }
      else{
-      console.log(data)
         setItemData({ title: '', img: '', name: '' });
         if (fileInputRef.current) {
           fileInputRef.current.value = ''; // Reseting file input

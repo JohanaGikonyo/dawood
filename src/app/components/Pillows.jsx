@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import { pillows } from '../helpers/helpers';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import Image from 'next/image';
